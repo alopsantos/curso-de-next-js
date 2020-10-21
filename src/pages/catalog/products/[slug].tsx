@@ -13,7 +13,6 @@ export default function Product({ product }: ProductProps) {
   if (router.isFallback) {
     return <h1>Carregando ...</h1>
   }
-  console.log(product)
   return (
     <div>
       <h1>{PrismicDom.RichText.asText(product.data.title)}</h1>
